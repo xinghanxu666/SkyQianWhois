@@ -13,7 +13,7 @@ def app_index():
 
 @app.route('/<domain>')
 def app_domain(domain):
-    return render_template('domain.html', doamin=domain, url='github.com')
+    return render_template('domain.html', doamin=domain, url='whois.tx648.asia')
 
 
 @app.route('/whois', methods=['POST'])
