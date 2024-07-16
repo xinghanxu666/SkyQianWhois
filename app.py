@@ -8,12 +8,12 @@ cache.init_app(app)
 
 @app.route('/')
 def app_index():
-    return render_template('index.html', url='Yiove.com')
+    return render_template('index.html', url='whois.tx648.asia')
 
 
 @app.route('/<domain>')
 def app_domain(domain):
-    return render_template('domain.html', doamin=domain, url='Yiove.com')
+    return render_template('domain.html', doamin=domain, url='github.com')
 
 
 @app.route('/whois', methods=['POST'])
