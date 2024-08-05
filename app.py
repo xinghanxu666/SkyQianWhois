@@ -8,12 +8,12 @@ cache.init_app(app)
 
 @app.route('/')
 def app_index():
-    return render_template('index.html', url='whois.tx648.asia')
+    return render_template('index.html', url='天絮whois')
 
 
 @app.route('/<domain>')
 def app_domain(domain):
-    return render_template('domain.html', doamin=domain, url='whois.tx648.asia')
+    return render_template('domain.html', doamin=domain, url='天絮whois')
 
 
 @app.route('/whois', methods=['POST'])
